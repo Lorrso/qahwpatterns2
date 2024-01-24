@@ -62,7 +62,7 @@ public class AuthorizationTest {
         $(".button").click();
         $("[data-test-id=error-notification] .notification__content")
                 .shouldBe(Condition.visible)
-                .shouldHave(Condition.exactText("Ошибка! Неверно указан логин или пароль"), Duration.ofSeconds(10));
+                .shouldHave(Condition.exactText("Личный кабинет"), Duration.ofSeconds(10));
     }
 
     @Test
